@@ -45,13 +45,13 @@
   </style>
 </head>
 <body>
-  <h1>Snake</h1>
+  <h1>Snake / Могой</h1>
   <div id="score-board">
-    <span>Score: <span id="score">0</span></span>
-    <span>High Score: <span id="high-score">0</span></span>
+    <span>Score / Оноо: <span id="score">0</span></span>
+    <span>High Score / Дээд оноо: <span id="high-score">0</span></span>
   </div>
   <canvas id="gameCanvas" width="400" height="400"></canvas>
-  <div class="instructions">Use Arrow Keys or Swipe to move. Tap or press any key to start.</div>
+  <div class="instructions">Use Arrow Keys or Swipe to move. Tap or press any key to start.<br>Хөдлөхийн тулд сумтай товчлуур эсвэл дэлгэц дээгүүр шударна уу. Эхлэхийн тулд товшино уу.</div>
 
   <script>
     const canvas = document.getElementById("gameCanvas");
@@ -159,7 +159,7 @@
     function gameLoop() {
       if (checkCollision()) {
         clearInterval(gameInterval);
-        alert(`Game Over! Final Score: ${score}`);
+        alert(`Game Over! / Тоглоом дууслаа!\nFinal Score / Эцсийн оноо: ${score}`);
         resetGame();
         return;
       }
